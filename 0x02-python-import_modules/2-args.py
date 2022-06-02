@@ -2,7 +2,6 @@
 
 if __name__ == "__main__":
     import sys
-    
     args = sys.argv
     len_args = len(args) - 1
     if len_args == 0:
