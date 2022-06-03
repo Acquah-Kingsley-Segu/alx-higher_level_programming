@@ -6,5 +6,3 @@ if __name__ == "__main__":
     item = dir(hid)
     for i in item[-3:]:
         print(i)
-
-    
