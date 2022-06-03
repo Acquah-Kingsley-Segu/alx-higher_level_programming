@@ -3,7 +3,6 @@
 if __name__ == "__main__":
     import calculator_1 as cal
     from sys import argv
-    
     operator = "+-*/"
     argv_len = len(argv) - 1
     print(argv_len)
@@ -27,4 +26,3 @@ if __name__ == "__main__":
             else:
                 print("{} {} {} = {}".format(a, op, b, cal.div(a, b)))
             exit(0)
-
