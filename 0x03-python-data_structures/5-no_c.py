@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 def no_c(my_string):
     l_str = ""
     for char in my_string:
