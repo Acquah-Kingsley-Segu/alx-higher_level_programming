@@ -33,7 +33,6 @@ int is_palindrome(listint_t **head)
 	temp2 = reverse_listint(&temp2);
 	for (counter = 0; counter < half && is_palindrome; counter++)
 	{
-		printf("temp1: %d -- temp2: %d\n", temp1->n, temp2->n);
 		if (temp1->n != temp2->n)
 			is_palindrome = 0;
 		temp1 = temp1->next;
