@@ -1,6 +1,13 @@
 #include "lists.h"
 #include <stdlib.h>
-#include <stdio.h>
+
+/**
+ * @*reverse_listint - Reverses a linked list in pladce
+ * @head: Pointer to a pointer pointing to the first item in the list
+ * Return: The new head of the reversed list
+ */
+listint_t *reverse_listint(listint_t **head);
+
 /**
  * is_palindrome - checks if a linked list is palindrome or not
  * @head: pointer to the head pointer
@@ -13,7 +20,6 @@ int is_palindrome(listint_t **head)
 {
 	int counter, half, odd_half, count = 0, is_palindrome = 1;
 	listint_t *temp1 = *head, *temp2 = *head;
-	int *half1, *half2;
 
 	if (*head == NULL || (*head)->next == NULL)
 		return (is_palindrome);
@@ -25,26 +31,33 @@ int is_palindrome(listint_t **head)
 	half = count / 2;
 	odd_half = half;
 	temp1 = *head;
-	
 	if (count % 2 != 0)
 		odd_half = half + 1;
 	for (counter = 0; counter < odd_half; counter++)
 		temp2 = temp2->next;
-	half1 = malloc(sizeof(int) * half);
-	half2 = malloc(sizeof(int) * half);
-	for (counter = 0; counter < half; counter++)
+	temp2 = reverse_listint(&temp2);
+	for (counter = 0; counter < half && is_palindrome; counter++)
 	{
-		half1[counter] = temp1->n;
-		half2[counter] = temp2->n;
+		printf("temp1: %d -- temp2: %d\n", temp1->n, temp2->n);
+		if (temp1->n != temp2->n)
+			is_palindrome = 0;
 		temp1 = temp1->next;
 		temp2 = temp2->next;
 	}
-	for (counter = 0; counter < half && is_palindrome; counter++)
-	{
-		if (half1[counter] != half2[(half - 1) - counter])
-			is_palindrome = 0;
-	}
-	free(half1);
-	free(half2);
 	return (is_palindrome);
+}
+
+listint_t *reverse_listint(listint_t **head)
+{
+  listint_t *node = *head, *next, *prev = NULL;
+
+  while (node)
+    {
+      next = node->next;
+      node->next = prev;
+      prev = node;
+      node = next;
+    }
+  *head = prev;
+  return (*head);
 }
