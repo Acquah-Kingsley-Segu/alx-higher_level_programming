@@ -15,7 +15,7 @@ int is_palindrome(listint_t **head)
 	listint_t *temp1 = *head, *temp2;
 	int *half1, *half2;
 
-	if (*head == NULL)
+	if (*head == NULL || (*head)->next == NULL)
 		return (is_palindrome);
 	while (temp1 != NULL)
 	{
