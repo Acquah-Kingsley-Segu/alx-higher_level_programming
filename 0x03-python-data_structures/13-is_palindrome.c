@@ -39,13 +39,10 @@ int is_palindrome(listint_t **head)
 		temp1 = temp1->next;
 		temp2 = temp2->next;
 	}
-	for (counter = 0; counter < half; counter++)
+	for (counter = 0; counter < half && is_palindrome; counter++)
 	{
 		if (half1[counter] != half2[(half - 1) - counter])
-		{
 			is_palindrome = 0;
-			break;
-		}
 	}
 	free(half1);
 	free(half2);
