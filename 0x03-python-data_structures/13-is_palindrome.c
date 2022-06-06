@@ -1,6 +1,14 @@
 #include "lists.h"
 #include <stdlib.h>
-#include <stdio.h>
+
+/**
+ * is_palindrome - checks if a linked list is palindrome or not
+ * @head: pointer to the head pointer
+ *
+ * Return: 1 if palindrome
+ *	   0 if  not palindrome
+ */
+
 int is_palindrome(listint_t **head)
 {
 	int counter, half, count = 0, is_palindrome = 1;
