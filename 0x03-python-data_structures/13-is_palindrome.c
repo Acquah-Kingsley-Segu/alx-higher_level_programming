@@ -12,7 +12,7 @@
 int is_palindrome(listint_t **head)
 {
 	int counter, half, odd_half, count = 0, is_palindrome = 1;
-	listint_t *temp1 = *head, *temp2;
+	listint_t *temp1 = *head, *temp2 = *head;
 	int *half1, *half2;
 
 	if (*head == NULL || (*head)->next == NULL)
@@ -30,9 +30,7 @@ int is_palindrome(listint_t **head)
 	else
 		odd_half = half;
 	for (counter = 0; counter < odd_half; counter++)
-		temp1 = temp1->next;
-	temp2 = temp1;
-	temp1 = *head;
+		temp2 = temp2->next;
 	half1 = malloc(sizeof(int) * half);
 	half2 = malloc(sizeof(int) * half);
 	for (counter = 0; counter < half; counter++)
