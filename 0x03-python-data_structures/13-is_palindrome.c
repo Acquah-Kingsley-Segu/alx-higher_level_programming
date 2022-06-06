@@ -22,8 +22,9 @@ int is_palindrome(listint_t **head)
 		count += 1;
 		temp1 = temp1->next;
 	}
+	/*
 	if (count % 2 != 0)
-		return (!is_palindrome);
+		return (!is_palindrome);*/
 	half = count / 2;
 	temp1 = *head;
 	for (counter = 0; counter < half; counter++)
