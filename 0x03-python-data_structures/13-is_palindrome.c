@@ -23,12 +23,11 @@ int is_palindrome(listint_t **head)
 		temp1 = temp1->next;
 	}
 	half = count / 2;
+	odd_half = half;
 	temp1 = *head;
 	
 	if (count % 2 != 0)
 		odd_half = half + 1;
-	else
-		odd_half = half;
 	for (counter = 0; counter < odd_half; counter++)
 		temp2 = temp2->next;
 	half1 = malloc(sizeof(int) * half);
