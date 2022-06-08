@@ -8,4 +8,3 @@ def search_replace(my_list, search, replace):
         else:
             new_list.append(my_list[idx])
     return new_list
-
