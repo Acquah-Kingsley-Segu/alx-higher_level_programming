@@ -40,8 +40,11 @@ class Square:
 
     def my_print(self):
         """ prints the square using the '#' symbol to stdout """
-        for num in range(1, self.area() + 1):
-            if num % self.__size == 0:
-                print("#")
-            else:
-                print("#", end="")
+        if self.__size == 0:
+            print("")
+        else:
+            for num in range(1, self.area() + 1):
+                if num % self.__size == 0:
+                    print("#")
+                else:
+                    print("#", end="")
