@@ -1,4 +1,10 @@
 #!/usr/bin/python3
+""" defines a square class template
+    with a private attribute and a
+    public method
+"""
+
+
 class Square:
     """ A square that is able to calculate its area """
     def __init__(self, size=0):

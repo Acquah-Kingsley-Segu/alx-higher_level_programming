@@ -1,4 +1,11 @@
 #!/usr/bin/python3
+""" defines a square template with a
+    private attribute,
+    property getter and setter for private field
+    and a public method
+"""
+
+
 class Square:
     """ defines a
         *private instance attribute: size

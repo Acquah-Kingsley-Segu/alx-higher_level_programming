@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+""" defines a square template class
+    with a private attribute and a validation feature
+"""
+
+
 class Square:
     """ Defines a square where its size id tested for validity """
     def __init__(self, size=0):
