@@ -67,9 +67,8 @@ class Square:
         if self.__size == 0:
             print("")
         else:
-            if self.__position[1] > 0:
-                for y in range(self.__position[1]):
-                    print()
+            for y in range(self.__position[1]):
+                print()
             for num in range(1, self.area() + 1):
                 if self.__position[0] > 0 and not space:
                     for x in range(self.__position[0]):
