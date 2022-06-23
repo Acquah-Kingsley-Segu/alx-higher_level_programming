@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+""" defines a square template class with a private atrribute """
+
+
 class Square:
     """Defines a square"""
     def __init__(self, size):
