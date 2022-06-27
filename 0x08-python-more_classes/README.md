@@ -2,6 +2,7 @@
 Concepts elaborated here:
 - Python in general
 - OOP(Object Oriented Programming)
+
 Resources:
 - [OOP-1](https://python.swaroopch.com/oop.html)
 - [OOP-2](https://python-course.eu/oop/object-oriented-programming.php)
