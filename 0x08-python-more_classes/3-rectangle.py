@@ -71,8 +71,9 @@ class Rectangle:
     def __str__(self):
         """Prints the rectangle using #-symbol"""
         rectangle = ""
-        for num in range(1, self.__height + 1):
-            rectangle += self.__width * "#"
-            if num < self.__height:
-                rectangle += "\n"
+        if self.__width > 0 and self.__height > 0:
+            for num in range(1, self.__height + 1):
+                rectangle += self.__width * "#"
+                if num < self.__height:
+                    rectangle += "\n"
         return rectangle
