@@ -10,7 +10,7 @@
 
 
 class Rectangle:
-    """A rectangle template with 
+    """A rectangle template with
         * private dimensions
         * public class attribute
     """
