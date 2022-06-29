@@ -86,14 +86,15 @@ class Rectangle:
         rectangle = ""
         if self.__width > 0 and self.__height > 0:
             for num in range(1, self.__height + 1):
+                rectangle += self.__width * str(self.print_symbol)
                 # check "print_symbol" is an instance variable of `self´
-                if 'print_symbol' in self.__dict__:
+                """if 'print_symbol' in self.__dict__:
                     rectangle += self.__width * str(self.print_symbol)
                 else:
                     rectangle += self.__width * str(Rectangle.print_symbol)
-
+                """
                 if num < self.__height:
-                    rectangle += "\n"
+                    rectangle += "\n" 
         return rectangle
 
     def __repr__(self):
