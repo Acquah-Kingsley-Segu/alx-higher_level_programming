@@ -7,9 +7,8 @@
      * perimeter
     using public instance methods
 """
-
-
 from typing import Union
+
 
 class Rectangle:
     """A rectangle template with
@@ -87,8 +86,7 @@ class Rectangle:
         rectangle = ""
         if self.__width > 0 and self.__height > 0:
             for num in range(1, self.__height + 1):
-                
-                #verifies if "print_symbol" is now an instance variable of `self´
+                # check "print_symbol" is an instance variable of `self´
                 if 'print_symbol' in self.__dict__:
                     rectangle += self.__width * str(self.print_symbol)
                 else:
