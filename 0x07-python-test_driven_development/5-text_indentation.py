@@ -3,7 +3,7 @@
 
 
 def text_indentation(text):
-    """ Prints a new version of a string by 
+    """ Prints a new version of a string by
         replaing (., ? and :) with two newline (\\n)
         Arg:
             text (str): string to be transformed
