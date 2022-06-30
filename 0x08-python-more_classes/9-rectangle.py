@@ -29,7 +29,7 @@ class Rectangle:
         Rectangle.number_of_instances += 1
 
     @classmethod
-    def square(cls, size = 0):
+    def square(cls, size=0):
         return (Rectangle(size, size))
 
     def __del__(self):
