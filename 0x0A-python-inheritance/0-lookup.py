@@ -3,8 +3,8 @@
 
 
 def lookup(obj):
-    """ Returns a list of attributes and methods of an object 
+    """ Returns a list of attributes and methods of an object
         Arg:
             obj (class instance): object to be used
     """
-    return dir(obj)
+    return (dir(obj))
