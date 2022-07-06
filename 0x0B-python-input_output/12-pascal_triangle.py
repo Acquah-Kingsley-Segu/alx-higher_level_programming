@@ -6,7 +6,7 @@ def pascal_triangle(n):
     """ Perform pascal triangle from 0 to n.
         It then returns a list of lists
         Arg:
-            * n (int): maximum pascal term 
+            * n (int): maximum pascal term
                        ie. from 0 ---> (n - 1)th term
     """
 
