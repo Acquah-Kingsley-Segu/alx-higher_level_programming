@@ -3,6 +3,3 @@ CREATE USER IF NOT EXISTS "usere_0d_1"@"localhost" IDENTIFIED WITH mysql_native_
 
 -- grant permissions to user
 GRANT ALL PRIVILEGES ON *.* TO "user_0d_1"@"localhost";
-
--- flush privileges
-FLUSH PRIVILEGES;
